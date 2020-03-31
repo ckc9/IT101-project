@@ -1,0 +1,65 @@
+:root {
+    --main-bg: #F5F5DC;
+    --accent: #4d0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    color: var(--accent);
+}
+
+section {
+    height: 100%;
+    background-color: var(--main-bg);
+}
+
+#playground {
+    width: calc(100% - 500px);
+    position: relative;
+}
+
+#block {
+    background-color: var(--main-bg);
+    position: absolute;
+    transition: all .5s;
+    transition-timing-function: linear;
+    border: 1px solid var(--accent);
+}
+
+#controls {
+    padding-left: 20px;
+    width: 500px;
+    border-left: 2px solid var(--accent);
+}
+
+button {
+    padding: 10px 5px;
+    background-color: var(--main-bg);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+}
+
+button, input {
+    cursor: pointer;
+}
+
+article {
+    margin: 10px 0;
+}
+
+input {
+    padding-top: 5px;
+}

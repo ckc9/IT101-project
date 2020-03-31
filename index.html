@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IT101</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section id="playground">
+        <div id="block" style="left: 10px; top: 10px; width: 100px; height: 100px; transform: rotate(0deg)"></div>
+    </section>
+    <section id="controls">
+        <article>
+            <button type="button" id="moveUp" onclick="moveVert(-5)">Move Up (w)</button>
+            <button type="button" id="moveDown" onclick="moveVert(5)">Move Down (s)</button>
+            <button type="button" id="moveLeft" onclick="moveHoriz(-5)">Move Left (a)</button>
+            <button type="button" id="moveRight" onclick="moveHoriz(5)">Move Right (d)</button>
+        </article>
+
+        <article>
+        <button type="button" id="smaller">Make Smaller (up)</button>
+        <button type="button" id="bigger">Make Bigger (down)</button>
+        </article>
+
+        <article>
+            <button type="button" id="rotateLeft">Rotate Left (left)</button>
+            <button type="button" id="rotateRight">Rotate Right (right)</button>
+        </article>
+
+        <article>
+            <p>Change color: <input type="color" id="color"></p>
+        </article>
+
+        <article>
+            <button type="button" id="reset">Reset</button>
+        </article>
+        
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
