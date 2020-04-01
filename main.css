@@ -40,6 +40,7 @@ section {
 }
 
 #controls {
+    position: relative;
     padding-left: 20px;
     width: 500px;
     border-left: 2px solid var(--accent);
@@ -62,4 +63,11 @@ article {
 
 input {
     padding-top: 5px;
+}
+
+a {
+    position: absolute;
+    color: var(--accent);
+    bottom: 20px;
+    right: 50%;
 }
